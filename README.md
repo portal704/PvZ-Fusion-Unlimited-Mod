@@ -72,8 +72,7 @@ Final path should look like:
 
 Join the community for updates and support:
 
-- **🔗 Blooms Server:** https://discord.gg/blooms
-- **Report Issues:** Create an issue on this GitHub repo
+- **🔗PVZ:Fusion Fans Discord** https://discord.com/invite/pvzfusion 
 
 ---
 
