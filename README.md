@@ -1,128 +1,89 @@
 # PvZ Fusion Unlimited Mod
 
-A **LemonLoader** mod for **Plants vs. Zombies: Fusion** that adds:
+A **LemonLoader** mod for **Plants vs. Zombies: Fusion** (Android) that adds:
 - ✅ **Unlimited Suns** (999,999 suns always available)
 - ✅ **No Cooldown** (Plants/cards ready instantly)
 
-## 🚀 Quick Start (GitHub Codespaces)
+**Version:** 1.0  
+**Game:** PvZ Fusion 3.9+  
+**Platform:** Android only  
+**Mod Loader:** LemonLoader (required)
 
-### Step 1: Open Codespaces
-1. Go to your repo: https://github.com/portal704/PvZ-Fusion-Unlimited-Mod
-2. Click **<> Code** (green button)
-3. Select **Codespaces** tab
-4. Click **Create codespace on main**
-5. Wait for it to load (takes ~2 min)
-
-### Step 2: Build the Mod in Codespaces
-
-Run these commands in the terminal:
-
-```bash
-# Navigate to project
-cd PvZ-Fusion-Unlimited-Mod
-
-# Restore dependencies
-dotnet restore
-
-# Build the DLL
-dotnet build --configuration Release
-```
-
-The compiled DLL will be at:
-```
-bin/Release/net6.0/PvZFusionUnlimitedMod.dll
-```
-
-### Step 3: Download the DLL
-
-1. In Codespaces file explorer (left sidebar), navigate to `bin/Release/net6.0/`
-2. Right-click `PvZFusionUnlimitedMod.dll`
-3. Click **Download**
-4. Save it to your device
-
-### Step 4: Install in PvZ Fusion
-
-1. **Locate PvZ Fusion game folder:**
-   - If on Android: Use a file manager app to find the game directory
-   - If on PC: Right-click game in Steam → Manage → Browse local files
-
-2. **Find the LemonMods folder** (if it doesn't exist, create it):
-   ```
-   PvZFusion_GameFolder/LemonMods/
-   ```
-
-3. **Place the DLL there:**
-   ```
-   PvZFusion_GameFolder/LemonMods/PvZFusionUnlimitedMod.dll
-   ```
-
-4. **Launch PvZ Fusion** with LemonLoader
-
-✅ **Mod is now active!** You'll have unlimited suns and no cooldowns.
+⚠️ **Note:** Not tested on MelonLoader. LemonLoader is required for this mod to work.
 
 ---
 
-## 📋 Requirements
-
-- **.NET 6.0 SDK** (installed in Codespaces automatically)
-- **LemonLoader** installed on PvZ Fusion
-- **Harmony library** (included via NuGet)
-
----
-
-## 🔧 Features
+## 🎮 Features
 
 ### Unlimited Suns
-- Players start with 999,999 suns
-- Sun consumption is blocked
-- Sun cap is removed
+- Start every level with 999,999 suns
+- Never run out of suns during gameplay
+- Sun consumption is completely disabled
 
 ### No Cooldown
 - All plants are instantly ready to use
-- Plant cards have 0 cooldown
-- Card cooldown system is disabled
+- Zero wait time between planting
+- Plant cards ready immediately after use
 
 ---
 
-## 📝 Troubleshooting
+## 📦 Installation
 
-**DLL not loading?**
-- Ensure LemonLoader is installed in PvZ Fusion
-- Check that the DLL is in the `LemonMods/` folder
-- Try restarting the game
+### Step 1: Patch PvZ Fusion with LemonLoader
+First, ensure LemonLoader is properly installed and patched into your PvZ Fusion game.
 
-**Build fails in Codespaces?**
-- Run `dotnet restore` first
-- Check that .NET 6.0 is installed: `dotnet --version`
-- Make sure you're in the project directory
+### Step 2: Use FV File Explorer
+1. Open **FV File Explorer** on your Android device
+2. Click the **🤖 Android** icon
+3. Navigate to **`/Android/data`**
+4. Find your **PvZ Fusion data folder** (usually `com.popcap.pvzfusion`)
+5. Look for the **`resources`** folder inside it
 
-**Game crashes after installing?**
-- Remove the DLL from `LemonMods/`
-- Check that you're using the correct version of PvZ Fusion
-- Try updating LemonLoader
+### Step 3: Place the DLL
+1. Download the DLL file from the **Releases** section
+2. Copy the DLL file
+3. Navigate to the **`resources`** folder (from Step 2)
+4. Paste the DLL file inside the **`resources`** folder
 
----
-
-## 🛠️ Customization
-
-Want to change the unlimited suns value? Edit `src/Main.cs`:
-
-```csharp
-__instance.currentSuns = 999999;  // Change this number
+Final path should look like:
+```
+/Android/data/com.popcap.pvzfusion/resources/PvZFusionUnlimitedMod.dll
 ```
 
-Want to add more features? Add more patch methods in the `src/Main.cs` file!
+### Step 4: Launch the Game
+1. Open **PvZ Fusion** on your phone
+2. LemonLoader should automatically load the mod
+3. You should see a confirmation message when the mod loads
+
+✅ **Done!** The mod will be active when the game starts.
 
 ---
 
-## ⚖️ License
+## ⚙️ Requirements
 
-This mod is provided as-is for personal use. Respect the original PvZ Fusion creators.
+- **PvZ Fusion 3.9 or higher**
+- **LemonLoader** installed and patched
+- **FV File Explorer** (or similar file manager)
+- Android device
 
 ---
 
-## 📞 Support
+## 📞 Community & Support
 
-Having issues? Check:
-- LemonLoader GitHub: https://github.com/Lemon-Mods/LemonLoader
-- PvZ Fusion modding Discord: (check community servers)
+Join the community for updates and support:
+
+- **🔗 Blooms Server:** https://discord.gg/blooms
+- **Report Issues:** Create an issue on this GitHub repo
+
+---
+
+## ⚠️ Disclaimer
+
+- This mod is for personal use only
+- Modifying the game may violate terms of service
+- Use at your own risk
+- Not affiliated with PopCap Games or EA
+
+---
+
+**Made with ❤️ for the PvZ Fusion community**
