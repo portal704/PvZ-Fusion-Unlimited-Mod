@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <!-- LemonLoader reference -->
-    <PackageReference Include="LemonLoader" Version="1.5.0" />
+    <PackageReference Include="LemonLoader" Version="0.7.3" />
   </ItemGroup>
 
 </Project>
